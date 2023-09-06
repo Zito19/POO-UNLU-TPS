@@ -1,4 +1,4 @@
-package TP1.clases;
+package TP1.Clases;
 public class ListaEnlazada {
     private Nodo primero = null;
     private Integer longitud = 0;
@@ -97,6 +97,19 @@ public class ListaEnlazada {
             nodoAux = nodoAux.getProximo();
         }
         return false;
+    }
+    public boolean reemplazar(Integer pos, Object nuevoDato) {
+        if (esVacia() || pos < 1 || pos > longitud) {
+            return false; // La lista está vacía o la posición está fuera de rango
+        }
+
+        Nodo nodoAux = primero;
+        for (int i = 1; i < pos; i++) {
+            nodoAux = nodoAux.getProximo(); // Avanza hasta el nodo en la posición deseada
+        }
+
+        nodoAux.setDato(nuevoDato); // Reemplaza el dato en la posición especificada
+        return true;
     }
     public String toString(){
         //imprime por pantalla la lista de los nodos.

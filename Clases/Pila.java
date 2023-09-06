@@ -1,4 +1,4 @@
-package TP1.clases;
+package TP1.Clases;
 
 public class Pila {
     private Nodo tope = null;

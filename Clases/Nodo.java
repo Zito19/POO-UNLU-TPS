@@ -1,4 +1,4 @@
-package TP1.clases;
+package TP1.Clases;
 
 public class Nodo {
     private Object dato;

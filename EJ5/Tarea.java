@@ -4,11 +4,11 @@ import java.time.LocalDate;
 
 public class Tarea {
 
-    private String descripcion;
-    private int prioridad;
+    protected String descripcion;
+    protected int prioridad;
     protected LocalDate fechaLimite;
     protected LocalDate fechaCompletada;
-    private Estado estado;
+    protected Estado estado;
     public enum Estado{
         incompleta,completa,vencida,porVencer;
         @Override

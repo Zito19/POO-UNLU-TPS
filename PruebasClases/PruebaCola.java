@@ -1,6 +1,6 @@
-package TP1.Pruebas;
+package TP1.PruebasClases;
 
-import TP1.clases.Cola;
+import TP1.Clases.Cola;
 
 public class PruebaCola {
     public static void main(String[] args){
