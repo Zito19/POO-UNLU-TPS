@@ -1,4 +1,4 @@
-package TP1.PruebasClases;
+package TP1.ClasesPruebas;
 
 import TP1.Clases.ListaEnlazada;
 
